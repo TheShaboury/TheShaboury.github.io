@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SHABOURY(1)</title>
-<meta name="description" content="Ahmed Shaboury. Mechatronics and robotics engineer: ROS2, embedded systems, Linux, automotive software, deep learning and reinforcement learning for robotics.">
+<meta name="description" content="Ahmed Shaboury. Software engineer: robotics software, embedded systems, Linux, automotive software, deep learning and reinforcement learning.">
 <style>
 :root{--bg:#171309;--fg:#e6d7b0;--dim:#9a8a62;--hi:#ffb547;--rule:#3a3120}
 @media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f0e4;--fg:#26221a;--dim:#6f6650;--hi:#8a4b00;--rule:#cfc6ad}}
@@ -42,6 +42,7 @@ pre{margin:.6rem 0;padding:.6rem .9rem;border:1px solid var(--rule);overflow-x:a
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,46ch),1fr));gap:0 4ch}
 .two{display:grid;grid-template-columns:minmax(0,64ch) minmax(0,1fr);gap:4ch}
 .fetch{color:var(--fg);align-self:start;margin-top:0}
+.side{align-self:start}#wire{display:block;width:100%;max-width:260px;aspect-ratio:1;margin-top:1rem;border:1px solid var(--rule)}
 .lab{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:4ch;margin-top:1rem}
 #grid{border:1px solid var(--rule);padding:.6rem 1ch;white-space:pre;line-height:1.5;width:max-content;max-width:100%;overflow-x:auto;cursor:pointer;user-select:none}
 #grid b{font-weight:400;color:var(--dim)}
@@ -61,18 +62,22 @@ dt{color:var(--dim)}dd{margin:0}
   .side-foot{margin-top:0}.content{padding:1rem 2ch 0;min-height:0}
   dl{grid-template-columns:1fr}dd{margin-bottom:.4rem}
 }
+
+.glitch{display:inline-block;animation:glitch 8s steps(1) infinite}
+@keyframes glitch{0%,94%,100%{transform:none;text-shadow:none}95%{transform:translateX(2px);text-shadow:-2px 0 var(--hi),2px 0 #4fb3bf}96%{transform:translateX(-3px);text-shadow:2px 0 var(--hi),-2px 0 #4fb3bf}97%{transform:none;text-shadow:none}}
+@media (prefers-reduced-motion:reduce){.glitch{animation:none}}
 </style>
 </head>
 <body>
 <div class="app">
 <aside>
-  <div><b class="hi">SHABOURY(1)</b><br><span>Ahmed Shaboury</span><br><span class="dim">robotics, embedded, ai</span></div>
+  <div><b class="hi glitch">SHABOURY(1)</b><br><span>Ahmed Shaboury</span><br><span class="dim">software engineer, robotics &amp; ai</span></div>
   <nav id="tree" aria-label="Pages">
     <a href="#about" data-p="about">~/about</a>
     <a href="#history" data-p="history">~/history</a>
     <a href="#projects" data-p="projects">~/projects</a>
-    <a href="#ai-lab" data-p="ai-lab">~/ai-lab</a>
     <a href="#skills" data-p="skills">~/skills</a>
+    <a href="#interests" data-p="interests">~/interests</a>
     <a href="#contact" data-p="contact">~/contact</a>
   </nav>
   <div class="side-foot">
@@ -85,15 +90,15 @@ dt{color:var(--dim)}dd{margin:0}
 <div class="pages">
 <section class="page" id="p-about"><div class="two"><div><h2>NAME</h2>
 <div class="s">
-  <p>shaboury - Ahmed Shaboury, mechatronics &amp; robotics engineer, Egypt</p>
+  <p>shaboury - Ahmed Shaboury, software engineer (robotics, embedded, AI), Egypt</p>
 </div><h2>SYNOPSIS</h2>
 <div class="s">
-  <p>ros2 | c++ | linux | embedded | automotive | ml | rl | cv</p>
+  <p>ros2 | c++ | linux | embedded | automotive | autonomy | ml | rl | cv</p>
 </div><h2>DESCRIPTION</h2>
 <div class="s">
   <p>
-    I build software for machines: robots, embedded boards and cars. Mostly C and C++ on Linux,
-    with Python and ROS2 on the robotics side, and a growing interest in machine learning for robots.
+    I am a software engineer. I build software for machines: robots, embedded boards and cars. Mostly C and C++ on Linux,
+    with Python and ROS2 on the robotics side, and a growing interest in machine learning for robots. My main area is robotics software: perception, planning and control, plus the embedded code and tests underneath.
   </p>
   <p>
     B.Sc. Mechatronics &amp; Robotics Engineering, Mansoura University, 2022 to 2026. GPA 3.9/4.0,
@@ -101,15 +106,16 @@ dt{color:var(--dim)}dd{margin:0}
     why my internships were in software quality, Linux internals and embedded systems.
   </p>
   <p><b>Exit status:</b> 1st locally, 11th globally in the F1TENTH autonomous racing competition (2024).</p>
-</div></div><pre class="fetch" aria-label="summary">ahmed@shaboury
+</div></div><div class="side"><pre class="fetch" aria-label="summary">ahmed@shaboury
 --------------
-role    mechatronics &amp; robotics eng.
+role    software engineer, robotics
 school  Mansoura University, 2022-26
 base    Egypt
 langs   C, C++, Python
 stack   ROS2, Linux, Yocto, TensorFlow
-now     ML, RL, edge AI
-rank    F1TENTH 1st local, 11th global</pre></div></section>
+focus   robotics, automotive software, ML
+rank    F1TENTH 1st local, 11th global</pre>
+<canvas id="wire" width="440" height="440" aria-hidden="true"></canvas></div></div></section>
 <section class="page" id="p-history"><h2>HISTORY</h2>
 <div class="s cols">
   <div class="e">
@@ -193,7 +199,53 @@ ppo @ mujoco (reinforcement learning, simulation)</pre>
     </ul>
   </div>
 </div></section>
-<section class="page" id="p-ai-lab"><h2>FOCUS</h2>
+<section class="page" id="p-interests"><h2>INTERESTS</h2>
+<div class="s"><p>Robotics software (including autonomous vehicles), AI, and the low-level code underneath both. Below: the work behind each, and a small demo you can play with.</p></div>
+<h2>ROBOTICS SOFTWARE</h2>
+<div class="s">
+  <p>
+    I want to work on software that lets vehicles and robots perceive their surroundings, decide what to do
+    and act on it safely, along with the embedded code and testing that make it reliable.
+    This is the work behind that, in the order a vehicle needs it.
+  </p>
+<pre>perceive   OpenCV track boundaries, SLAM Toolbox maps, CNN image classification
+plan       Nav2 planners and costmaps, gap following, pure pursuit
+control    PID, dynamic speed, collision avoidance
+validate   GTest, CAPL, static analysis, simulation
+embed      C/C++ on Linux, Yocto, QNX, Adaptive AUTOSAR</pre>
+</div>
+<div class="s cols">
+  <div class="e"><div class="h">Perception</div>
+    <ul>
+      <li>F1TENTH: OpenCV finds road boundaries and the track center to produce a target point.</li>
+      <li>Warehouse robot: SLAM Toolbox mapping and localization in unknown indoor spaces, with sensor fusion.</li>
+      <li>Kemet: custom CNN and transfer learning on Sentinel-2 imagery.</li>
+    </ul>
+  </div>
+  <div class="e"><div class="h">Planning and control</div>
+    <ul>
+      <li>Nav2 global and local planners, costmaps and recovery behaviors on a real robot.</li>
+      <li>F1TENTH: PID wall following, gap following and pure pursuit. 1st local, 11th global.</li>
+      <li>PPO reinforcement learning in MuJoCo as part of the graduation project.</li>
+    </ul>
+  </div>
+  <div class="e"><div class="h">Validation</div>
+    <ul>
+      <li>Valeo, BMW Smart Parking: GTest unit tests, CAPL scripts and static analysis against automotive quality standards.</li>
+      <li>ros2_launch_tester: catches silent launch failures in multi-node ROS2 systems, built for CI.</li>
+      <li>Simulators on my skills list: CARLA, Gazebo, CoppeliaSim, MuJoCo.</li>
+    </ul>
+  </div>
+  <div class="e"><div class="h">Embedded and platform</div>
+    <ul>
+      <li>Linux system programming and minimal Yocto distributions at STMicroelectronics.</li>
+      <li>Automotive wiper controller in Simulink: 100 Hz scheduler (10 ms cycle), fail-safe logic, generated C code.</li>
+      <li>Skills also include QNX and Adaptive AUTOSAR.</li>
+    </ul>
+  </div>
+</div>
+<div class="s"><p>Details and repos are on the <a href="#projects" data-p="projects">projects</a> page.</p></div>
+<h2>AI</h2>
 <div class="s">
   <p>Right now: machine learning, deep learning, computer vision, reinforcement learning, edge AI, and AI for robotics.</p>
 </div><h2>AI LAB</h2>
@@ -230,6 +282,7 @@ ppo @ mujoco (reinforcement learning, simulation)</pre>
     <dt>robotics</dt><dd>ROS, ROS2, Nav2, SLAM Toolbox, MuJoCo, Gazebo, CARLA, CoppeliaSim</dd>
     <dt>embedded</dt><dd>AVR, Arduino, Jetson, Yocto, QNX, Adaptive AUTOSAR, Linux system programming</dd>
     <dt>testing</dt><dd>Google Test, CAPL, static analysis</dd>
+    <dt>practice</dt><dd>unit testing, Git workflows, CI-friendly tooling, multithreading, sockets, debugging</dd>
     <dt>tools</dt><dd>Git, Docker, FastAPI, Simulink, NumPy, Pandas</dd>
     <dt>spoken</dt><dd>Arabic (native), English (C1), German (A2)</dd>
   </dl>
@@ -237,6 +290,7 @@ ppo @ mujoco (reinforcement learning, simulation)</pre>
 <section class="page" id="p-contact"><h2>REPORTING BUGS</h2>
 <div class="s">
   <p>Bugs, job offers and robot ideas: <a href="mailto:ahmedshaboury000@gmail.com">ahmedshaboury000@gmail.com</a></p>
+  <p>Open to software engineering and AI roles.</p>
 </div><h2>SEE ALSO</h2>
 <div class="s">
   <p>
@@ -255,7 +309,7 @@ ppo @ mujoco (reinforcement learning, simulation)</pre>
 <script>
 (function(){
 var $=function(s){return document.querySelector(s)},
-pages=["about","history","projects","ai-lab","skills","contact"],
+pages=["about","history","projects","skills","interests","contact"],
 root=document.documentElement,out=$("#out"),inp=$("#cmd");
 function log(t){if(!t)return;out.hidden=false;out.textContent+=t+"\n";out.scrollTop=out.scrollHeight}
 function go(p){
@@ -274,6 +328,7 @@ function theme(){
   var c=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"),
   n=c==="dark"?"light":"dark";root.setAttribute("data-theme",n);
   try{localStorage.setItem("theme",n)}catch(e){}
+  if(still)wire(0);
 }
 try{var t=localStorage.getItem("theme");if(t)root.setAttribute("data-theme",t)}catch(e){}
 $("#theme").addEventListener("click",theme);
@@ -336,13 +391,42 @@ $("#btn-run").addEventListener("click",run);
 $("#btn-reset").addEventListener("click",function(){defaults();fresh()});
 defaults();fresh();
 
+var still=matchMedia("(prefers-reduced-motion: reduce)").matches,
+cv=$("#wire"),g=cv.getContext("2d"),PH=(1+Math.sqrt(5))/2,
+V=[[-1,PH,0],[1,PH,0],[-1,-PH,0],[1,-PH,0],[0,-1,PH],[0,1,PH],[0,-1,-PH],[0,1,-PH],[PH,0,-1],[PH,0,1],[-PH,0,-1],[-PH,0,1]],E=[];
+for(var i=0;i<12;i++)for(var j=i+1;j<12;j++)
+  if(Math.abs(Math.hypot(V[i][0]-V[j][0],V[i][1]-V[j][1],V[i][2]-V[j][2])-2)<.01)E.push([i,j]);
+function wire(t){
+  var w=cv.width,ay=t*.00025,ax=.5+.15*Math.sin(t*.00018),
+  col=getComputedStyle(root).getPropertyValue("--hi").trim(),P=[];
+  g.clearRect(0,0,w,w);
+  V.forEach(function(v){
+    var x=v[0]*Math.cos(ay)+v[2]*Math.sin(ay),z=-v[0]*Math.sin(ay)+v[2]*Math.cos(ay),
+    y=v[1]*Math.cos(ax)-z*Math.sin(ax),z2=v[1]*Math.sin(ax)+z*Math.cos(ax),k=4/(4-z2);
+    P.push([w/2+x*w*.16*k,w/2+y*w*.16*k,z2]);
+  });
+  g.strokeStyle=g.fillStyle=col;g.lineWidth=2;
+  E.forEach(function(e){
+    var a=P[e[0]],b=P[e[1]];
+    g.globalAlpha=Math.max(.15,Math.min(.85,.5+(a[2]+b[2])*.2));
+    g.beginPath();g.moveTo(a[0],a[1]);g.lineTo(b[0],b[1]);g.stroke();
+  });
+  g.globalAlpha=.9;P.forEach(function(q){g.fillRect(q[0]-2,q[1]-2,4,4)});
+}
+var last=0;
+function frame(t){
+  if(t-last>33&&$("#p-about").classList.contains("on")){last=t;wire(t)}
+  requestAnimationFrame(frame);
+}
+if(still)wire(0);else requestAnimationFrame(frame);
+
 /* prompt */
 var C={
   help:function(){return "help  ls  cd <page>  whoami  train  theme  github  cv  clear\npages: "+pages.join(" ")},
   ls:function(){return pages.join("  ")},
   cd:function(a){return go(a)?"":"no such page: "+(a||"")},
-  whoami:function(){return "ahmed shaboury, mechatronics & robotics engineer"},
-  train:function(){go("ai-lab");if(!timer)train();return "training. click a cell to move a shelf."},
+  whoami:function(){return "ahmed shaboury, software engineer (robotics, embedded, AI)"},
+  train:function(){go("interests");if(!timer)train();return "training. click a cell to move a shelf."},
   theme:function(){theme();return ""},
   github:function(){window.open("https://github.com/TheShaboury");return "opening github"},
   cv:function(){window.open("cv.pdf");return "opening cv.pdf"},
