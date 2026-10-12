@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHABOURY(1)</title>
+<meta name="description" content="Ahmed Shaboury. Mechatronics and robotics engineer: ROS2, embedded systems, Linux, automotive software, deep learning and reinforcement learning for robotics.">
+<style>
+:root{--bg:#171309;--fg:#e6d7b0;--dim:#9a8a62;--hi:#ffb547;--rule:#3a3120}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){--bg:#f4f0e4;--fg:#26221a;--dim:#6f6650;--hi:#8a4b00;--rule:#cfc6ad}
+}
+:root[data-theme="light"]{--bg:#f4f0e4;--fg:#26221a;--dim:#6f6650;--hi:#8a4b00;--rule:#cfc6ad}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.6 ui-monospace,"SF Mono","Cascadia Mono","DejaVu Sans Mono",Menlo,Consolas,monospace}
+main{max-width:82ch;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+a{color:var(--hi);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--hi);outline-offset:2px}
+.prompt{color:var(--dim);margin:0 0 1rem}
+.prompt b{color:var(--hi);font-weight:400}
+.cursor{display:inline-block;width:.6em;height:1.1em;background:var(--hi);vertical-align:text-bottom;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.cursor{animation:none}}
+.top{display:flex;justify-content:space-between;color:var(--dim);border-bottom:1px solid var(--rule);padding-bottom:.4rem;margin-bottom:1rem;gap:1ch}
+.jump{display:flex;flex-wrap:wrap;gap:0 1.5ch;margin:0 0 .5rem}
+.jump button{margin-left:auto;background:none;border:0;color:var(--dim);font:inherit;cursor:pointer;padding:0}
+h2{font-size:1rem;margin:2.2rem 0 .5rem;color:var(--hi);font-weight:700;letter-spacing:.04em}
+.s{padding-left:4ch}
+p{margin:.5rem 0}
+.dim{color:var(--dim)}
+.e{margin:1.1rem 0}
+.e .h{font-weight:700}
+ul{list-style:none;margin:.3rem 0;padding:0}
+li{padding-left:2ch;text-indent:-2ch;margin:.25rem 0}
+li::before{content:"* ";color:var(--dim)}
+pre{margin:.6rem 0;padding:.6rem .9rem;border:1px solid var(--rule);overflow-x:auto;color:var(--dim);font:inherit;font-size:.9rem}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:.2rem 2ch;margin:0}
+dt{color:var(--dim)}dd{margin:0}
+footer{display:flex;justify-content:space-between;gap:1ch;margin-top:3rem;padding-top:.4rem;border-top:1px solid var(--rule);color:var(--dim);font-size:.85rem}
+@media (max-width:560px){.s{padding-left:1.5ch}dl{grid-template-columns:1fr}dd{margin-bottom:.4rem}.top span:nth-child(2){display:none}}
+</style>
+</head>
+<body>
+<main>
+
+<p class="prompt"><b>ahmed@shaboury:~$</b> man shaboury <span class="cursor" aria-hidden="true"></span></p>
+
+<div class="top"><span>SHABOURY(1)</span><span>Personal Site Manual</span><span>SHABOURY(1)</span></div>
+
+<nav class="jump" aria-label="Sections">
+  <a href="#name">name</a> <a href="#history">history</a> <a href="#projects">projects</a>
+  <a href="#focus">focus</a> <a href="#skills">skills</a> <a href="#bugs">bugs</a> <a href="cv.pdf">cv.pdf</a>
+  <button id="theme" type="button" aria-label="Toggle light or dark theme">theme</button>
+</nav>
+
+<h2 id="name">NAME</h2>
+<div class="s">
+  <p>shaboury - Ahmed Shaboury, mechatronics &amp; robotics engineer, Egypt</p>
+</div>
+
+<h2>SYNOPSIS</h2>
+<div class="s">
+  <p>ros2 | c++ | linux | embedded | automotive | ml | rl | cv</p>
+</div>
+
+<h2>DESCRIPTION</h2>
+<div class="s">
+  <p>
+    I build software for machines: robots, embedded boards and cars. Mostly C and C++ on Linux,
+    with Python and ROS2 on the robotics side, and a growing interest in machine learning for robots.
+  </p>
+  <p>
+    B.Sc. Mechatronics &amp; Robotics Engineering, Mansoura University, 2022 to 2026. GPA 3.9/4.0,
+    top 3 in the department. I like things that are tested, measured and easy to debug, which is
+    why my internships were in software quality, Linux internals and embedded systems.
+  </p>
+  <p><b>Exit status:</b> 1st locally, 11th globally in the F1TENTH autonomous racing competition (2024).</p>
+</div>
+
+<h2 id="history">HISTORY</h2>
+<div class="s">
+  <div class="e">
+    <div class="h">Valeo, software engineering intern <span class="dim">(11.2025 - 06.2026)</span></div>
+    <div class="dim">BMW Smart Parking System, R&amp;D Center, Brain Division (anSWer team)</div>
+    <ul>
+      <li>Unit tests with Google Test for critical modules, high coverage.</li>
+      <li>CAPL scripts for automated test scenarios and in-vehicle communication checks.</li>
+      <li>Static analysis against automotive software quality standards.</li>
+      <li>Scripts that automate parameter configuration and cut manual test work.</li>
+      <li>Embedded C++ codebase, Git workflow, international cross-functional teams.</li>
+    </ul>
+  </div>
+  <div class="e">
+    <div class="h">STMicroelectronics, Linux system programming intern <span class="dim">(09.2025 - 02.2026)</span></div>
+    <ul>
+      <li>Filesystems, process control and multithreading in C and C++ under Linux.</li>
+      <li>Built minimal Linux distributions with Yocto.</li>
+      <li>Socket-based client-server programs and network utilities.</li>
+    </ul>
+  </div>
+  <div class="e">
+    <div class="h">ITI, embedded systems trainee <span class="dim">(06.2025 - 08.2025)</span></div>
+    <ul><li>AVR ATmega32, embedded C, UART, SPI, I2C, sensor interfacing, interrupts.</li></ul>
+  </div>
+  <div class="e">
+    <div class="h">NTI, machine learning trainee <span class="dim">(06.2025 - 08.2025)</span></div>
+    <ul><li>Supervised and unsupervised models, time series (ARIMA, Prophet), Apache Spark.</li></ul>
+  </div>
+</div>
+
+<h2 id="projects">PROJECTS</h2>
+<div class="s">
+  <div class="e">
+    <div class="h"><a href="https://github.com/TheShaboury/Autonomous-Warehouse-Robot">Autonomous-Warehouse-Robot</a> <span class="dim">(graduation project, 06.2025 - 06.2026)</span></div>
+    <p>
+      Modular autonomous mobile robot for warehouses. ROS2 Jazzy on an NVIDIA Jetson Nano and an Arduino,
+      C++ and Python nodes. Covers navigation, localization, control and sensor data pipelines.
+      Also trained a PPO reinforcement learning policy in MuJoCo.
+    </p>
+<pre>sensors > fusion > slam_toolbox (map, pose)
+                 > nav2 (planners, costmaps, recovery)
+ppo @ mujoco (reinforcement learning, simulation)</pre>
+  </div>
+  <div class="e">
+    <div class="h"><a href="https://github.com/TheShaboury/Land-Type-Classification-Project">Kemet: Land-Type-Classification</a> <span class="dim">(06.2025 - 12.2025)</span></div>
+    <p>
+      Deep learning image classifier for Egyptian land types, built on Sentinel-2 and EuroSAT imagery,
+      with cleaning, normalization and augmentation. Trained a custom CNN and compared ResNet50, VGG16
+      and EfficientNet with transfer learning. Inference is served through FastAPI. TensorFlow, Python.
+    </p>
+  </div>
+  <div class="e">
+    <div class="h"><a href="https://github.com/TheShaboury/ros2_launch_tester">ros2_launch_tester</a> <span class="dim">(12.2024)</span></div>
+    <p>
+      Checks that ROS2 launch files actually bring up the expected nodes, topics and services, so
+      silent failures in multi-node systems get caught. YAML configs, auto-discovery, timeouts,
+      colored reports, made for CI/CD. Cut debugging time by 60%. Python, rclpy.
+    </p>
+  </div>
+  <div class="e">
+    <div class="h"><a href="https://github.com/TheShaboury/ROS2_Wall_Follower_PID">ROS2_Wall_Follower_PID</a> <span class="dim">(02.2024 - 08.2024)</span></div>
+    <p>
+      The F1TENTH racing system behind the 1st local, 11th global result. OpenCV vision finds
+      road boundaries and the track center to produce a target point. Control uses PID wall following,
+      gap following and pure pursuit, with dynamic speed and collision avoidance. C++, ROS2.
+    </p>
+  </div>
+  <div class="e">
+    <div class="h"><a href="https://github.com/TheShaboury/Automotive-Wiper-System">Automotive-Wiper-System</a> <span class="dim">(08.2025)</span></div>
+    <p>
+      MATLAB/Simulink model-based design. Modes: off, low, high, auto. Adaptive PWM over 8 speed
+      levels on a 100 Hz scheduler (10 ms cycle), fail-safe logic, generated C code.
+    </p>
+  </div>
+  <div class="e">
+    <div class="h">also on github</div>
+    <ul>
+      <li><a href="https://github.com/TheShaboury/unix-utilities">unix-utilities</a>: basic Unix tools in C.</li>
+      <li><a href="https://github.com/TheShaboury/ATMega32_Drivers">ATMega32_Drivers</a>: microcontroller drivers in C.</li>
+      <li><a href="https://github.com/TheShaboury/Genetic_Algorithm_Solver">Genetic_Algorithm_Solver</a>: genetic algorithm for approximating equation solutions, C++.</li>
+    </ul>
+  </div>
+</div>
+
+<h2 id="focus">FOCUS</h2>
+<div class="s">
+  <p>Right now: machine learning, deep learning, computer vision, reinforcement learning, edge AI, and AI for robotics.</p>
+</div>
+
+<h2 id="skills">SKILLS</h2>
+<div class="s">
+  <dl>
+    <dt>languages</dt><dd>C, C++, Python, MATLAB, Java, Assembly, SQL, PLC</dd>
+    <dt>ml / ai</dt><dd>TensorFlow, deep learning, CNNs, transfer learning, reinforcement learning (PPO)</dd>
+    <dt>vision</dt><dd>OpenCV, image classification, image preprocessing</dd>
+    <dt>robotics</dt><dd>ROS, ROS2, Nav2, SLAM Toolbox, MuJoCo, Gazebo, CARLA, CoppeliaSim</dd>
+    <dt>embedded</dt><dd>AVR, Arduino, Jetson, Yocto, QNX, Adaptive AUTOSAR, Linux system programming</dd>
+    <dt>testing</dt><dd>Google Test, CAPL, static analysis</dd>
+    <dt>tools</dt><dd>Git, Docker, FastAPI, Simulink, NumPy, Pandas</dd>
+    <dt>spoken</dt><dd>Arabic (native), English (C1), German (A2)</dd>
+  </dl>
+</div>
+
+<h2 id="bugs">REPORTING BUGS</h2>
+<div class="s">
+  <p>Bugs, job offers and robot ideas: <a href="mailto:ahmedshaboury000@gmail.com">ahmedshaboury000@gmail.com</a></p>
+</div>
+
+<h2>SEE ALSO</h2>
+<div class="s">
+  <p>
+    <a href="https://github.com/TheShaboury">github(1)</a>,
+    <a href="https://www.linkedin.com/in/theshaboury/">linkedin(1)</a>,
+    <a href="cv.pdf">cv(5)</a>
+  </p>
+</div>
+
+<footer><span>Egypt</span><span id="clock"></span><span>SHABOURY(1)</span></footer>
+
+</main>
+<script>
+(function(){
+  var r=document.documentElement;
+  try{var t=localStorage.getItem("theme");if(t)r.setAttribute("data-theme",t)}catch(e){}
+  document.getElementById("theme").addEventListener("click",function(){
+    var cur=r.getAttribute("data-theme");
+    if(!cur)cur=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";
+    var n=cur==="dark"?"light":"dark";
+    r.setAttribute("data-theme",n);
+    try{localStorage.setItem("theme",n)}catch(e){}
+  });
+  var d=new Date(),D=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+  M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  document.getElementById("clock").textContent=D[d.getUTCDay()]+d.getUTCDate()+M[d.getUTCMonth()]+d.getUTCFullYear();
+})();
+</script>
+</body>
+</html>
